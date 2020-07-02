@@ -1,8 +1,8 @@
 def min_array (array)
-  low_num = 0
+
   counter = 0
   while counter<array.length do
-    if array[counter] < array[counter +1]
+    if array[counter] < array[counter +1] && array[low_num]
       low_num = array[counter]
     else
       low_num = array[counter+1]
