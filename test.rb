@@ -13,3 +13,5 @@ def min_array (array)
 end
 
 array = [ 19, 40, 11, 1432, 13, 143, 543, 30,  43]
+
+min_array(array)
