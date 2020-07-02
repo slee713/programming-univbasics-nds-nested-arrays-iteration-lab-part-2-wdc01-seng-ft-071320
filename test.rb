@@ -9,6 +9,7 @@ def min_array (array)
     end
     counter += 1
   end
+  puts low_num
 end
 
 array = [ 19, 40, 11, 1432, 13, 143, 543, 30,  43]
