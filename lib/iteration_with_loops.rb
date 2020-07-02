@@ -6,15 +6,22 @@ def find_min_in_nested_arrays(src)
 
   while row_counter < src.length do
     index_counter = 0
+
     while index_counter < src[row_counter].length do
-      low_num = 20
-      if src[row_counter][index_counter] < low_num
-        min_numbers.push(src[row_counter][index_counter])
-        low_num = src[row_counter][index_counter]
+
+      # [ 19, 21, 24, 26, 30, 18]
+      max_val = 10000000000
+      lowest_num = 0
+      if src[row_counter][index_counter] < max_val
+        max_val = src[row_counter][index_counter]
+        lowest_num = src[row_counter][index_counter]
       end
+      min_numbers >> lowest_num
       index_counter += 1
     end
+
     row_counter += 1
   end
+
   p min_numbers
 end
